@@ -1,9 +1,26 @@
-<?php
-echo "<h2> Dados recebidos no Back-end </h2>";
+PHP
 
-$nome = $_POST['nome'] ?? '';
-$email = $_POST['email'] ?? '';
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Recebidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-echo "Nome: $nome <br><br>";
-echo "Email: $email";
-?>
+    <?php
+    // Verifica se os dados foram enviados via POST
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+
+        echo "<h1>Dados recebidos no Back-end</h1>";
+        echo "<p><strong>Nome:</strong> " . htmlspecialchars($nome) . "</p>";
+        echo "<p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>";
+    }
+    ?>
+
+</body>
+</html>
