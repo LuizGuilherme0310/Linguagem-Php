@@ -16,7 +16,7 @@ PHP
         $nome = $_POST['nome'];
         $email = $_POST['email'];
 
-        echo "<h1>Dados recebidos no Back-end</h1>";
+        echo "<h1>Você é sócio do Vasco da Gama!</h1>";
         echo "<p><strong>Nome:</strong> " . htmlspecialchars($nome) . "</p>";
         echo "<p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>";
     }
