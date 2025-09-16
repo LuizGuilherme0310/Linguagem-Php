@@ -2,6 +2,7 @@
 //supondo que a variavével &mes recebeu o dado via front-end
 $mes = 12;
 $genero = 'f';
+$reservista = '10203040';
 if  ($mes == 1 || $mes ==7) {
 print('Mês de férias '.'<br>');
 print('O mês é: '.$mes);
@@ -18,4 +19,11 @@ print('O mês é: '.$mes);
     else{
         print('Sexo válido - '.$genero);
     }
+echo '<br>';
+if($idade >=18 &&($genero == 'm' || $genero =='M')) {
+    if(reservista == null)
+        print('Seu numero de reservista é obrigatório');
+}else
+    print('voce não precisa de reservista');
+
 ?>
