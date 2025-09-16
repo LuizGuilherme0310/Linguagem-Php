@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da página e centralização */
+body {
+    background: radial-gradient(circle at center, #333333 0%, #111111 70%, #000000 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 2.5em; 
+    color: white; /* NOVO: Texto branco para contrastar com o fundo escuro */
+    margin-bottom: 25px; 
+}
+
+/* Container do formulário */
+form {
+    background: white; /* NOVO: Fundo do formulário branco */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25); /* Sombra um pouco mais escura */
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333; /* NOVO: Cor mais escura para as labels no fundo branco */
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #A00000; /* NOVO: Borda focada na cor vermelha do Vasco */
+    box-shadow: 0 0 5px #A00000;
+}
+
+/* Botão */
+input[type="submit"] {
+    width: 100%;
+    background-color: #A00000; /* NOVO: Cor do botão Vermelho-Vasco */
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #850000; /* NOVO: Tom de vermelho mais escuro no hover */
+}
